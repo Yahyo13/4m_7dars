@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: 0 auto;
+    align-items: center;
+    height: 70px;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+header,main{
+    background-color: rgba(31, 36, 45, 1);
+}
+
+.d{
+    background-color: rgba(31, 36, 45, 1);
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header a:hover{
+    color: rgba(0, 238, 255, 1);
+}
+
+.box1 h1,p,h3{
+    color: #fff;
+}
+
+.box1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 120px;
+}
+
+
+
+.box1 button{
+    width: 120px;
+    height: 35px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(0, 238, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 238, 255, 1);
+    margin-top: 20px;
+}
+
+.box2 p{
+    font-size: 15px;
+}
+
+.box2 div{
+    width: 310px;
+    height: 300px   ;
+    background: rgba(50, 57, 70, 1);
+    border-radius: 20px;
+    text-align: center  ;
+}
+
+.box2 button{
+    width: 120px;
+    height: 35px;
+    border: none;
+    background-color: rgba(0, 238, 255, 1);
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 238, 255, 1);
+
+
+}
+
+.box2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box3{
+ 
+    background-color: rgba(50, 57, 70, 1);
+    display: flex;
+    align-items: center;
+
+}
+
+.box3 img{
+    border-radius: 20px;
+    width: 376px;
+    height: 251px;
+    margin-top: 20px;
+}
+
+.box31{
+    background-color: rgba(50, 57, 70, 1);
+    padding-top: 100px;
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+
+input{
+    color: rgba(117, 117, 117, 1);
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(50, 57, 70, 1);
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.box4 div{
+    width: 640px;
+    /* margin-left: 370px; */
+    /* padding-top: 20px; */
+}
+
+.box41{
+    display: flex;
+    justify-content: center;
+}
+
+
+textarea{
+    width: 615px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+    height: 280px;
+    background-color: rgba(50, 57, 70, 1);
+}
+
+
+.box4 button{
+    background-color: rgba(0, 238, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 238, 255, 1);
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:1024px){
+    header{
+        justify-content: space-evenly;
+        padding-right: 110px;
+    }
+    
+    .img{
+        width: 358px;
+        height: 434px;
+    }
+        
+    .box1{
+        justify-content: center;
+    }
+
+    .box2 div{
+        width: 258px;
+    }
+
+    .box3 img{
+        width: 265px;
+        height: 177px;
+    }
+
+    .box4 div{
+        margin: 0 auto;
+    }
+}
+
+
+
+
+@media(max-width:768px){
+    .img{
+        width: 537px;
+        height: 652px;
+    }
+    
+    .box1{
+        flex-direction: column;
+    }
+
+    .img2{
+        display: block !important;
+    }
+
+    header{
+        padding-left: 78px;
+    }
+
+    header a{
+        display: none;
+    }
+
+    .box2 div{
+        width: 352px;
+        height: 316px;
+    }
+
+    .img3{
+        width: 710px !important;
+        margin-top: 20px;
+    }
+}
+
+
+@media(max-width:390px){
+    header{
+        width: 300px;
+        
+    }
+
+
+    
+    header h1{
+        padding-right: 70px;
+    }
+
+    input{
+        width: 330px;
+        
+    }
+
+    /* .box4 div div{
+        padding-right: 240px;
+    } */
+
+    .but{
+        padding-right: 300px;
+    }
+
+    .box2 div{
+        width: 90% !important;
+        margin-top: 10px;
+    }
+
+    textarea{
+        width: 330px;
+    }
+
+    .box1 img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .box4{
+        padding-left: 300px;
+    }
+
+    .img{
+        width: 273px !important;
+        height: 331px !important;
+    }
+
+    .box1 h3{
+        font-size: 20px !important;
+    }
+
+    .box1 h1{
+        font-size: 40px !important;
+    }
+
+    .box1 p{
+        font-size: 13px;
+    }
+
+    .div{
+       margin: 0 auto;
+    }
+
+    header{
+        margin: 0 auto;
+    }
+
+
+    .box4 h1{
+        padding-right: 230px;
+    }
+
+
+    
+
+}
+
+
+
+
